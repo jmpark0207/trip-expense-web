@@ -1,0 +1,1 @@
+{"name":"출장비용 정산","short_name":"정산","description":"영수증을 올리면 정산내역서와 영수증 취합본이 나옵니다","start_url":"/trip-expense-web/","display":"standalone","background_color":"#FFFFFF","theme_color":"#083F77","lang":"ko","scope":"/trip-expense-web/","orientation":"portrait","icons":[{"src":"/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]}
