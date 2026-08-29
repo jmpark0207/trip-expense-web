@@ -1,0 +1,4 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/pdf-CvSl8wqg.js","assets/index-BJOMjTZk.js","assets/index-CeYVQupK.css"])))=>i.map(i=>d[i]);
+import{n as e}from"./index-BJOMjTZk.js";var t=null;async function n(){if(t)return t;let n=await e(()=>import(`./pdf-CvSl8wqg.js`),__vite__mapDeps([0,1,2]));return n.GlobalWorkerOptions.workerSrc=new URL(`/trip-expense-web/assets/pdf.worker.min-Dswkl-cV.mjs`,``+import.meta.url).href,t=n,n}async function r(e){let t=await(await n()).getDocument({data:new Uint8Array(await e.arrayBuffer()),useSystemFonts:!0,cMapUrl:`/trip-expense-web/cmaps/`,cMapPacked:!0}).promise,r=``,i=Math.min(t.numPages,10);for(let e=1;e<=i;e++){let n=await(await t.getPage(e)).getTextContent();r+=n.items.map(e=>`str`in e?e.str:``).join(`
+`)+`
+`}return await t.cleanup?.(),r}var i=e=>e.replace(/\s/g,``).length>=40;export{r as extractPdfText,i as hasText};
